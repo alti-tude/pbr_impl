@@ -21,5 +21,9 @@ int main(){
     b.x = b.y = b.z = 0;
     assert(b.dot(b)==0);
     assert(b.length()==0);
+
+    a = permute(a, 2,0,1);
+    assert(a==Vector3<Float>(1,-3,-1));
+
     return 0;
 }

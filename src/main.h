@@ -1,9 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include<iostream>
+#include <iostream>
 #include <math.h>  
-#include "vector3.h"
-#include "vector2.h"
+#include "geometry.h"
 
 #endif

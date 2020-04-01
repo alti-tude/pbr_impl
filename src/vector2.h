@@ -200,4 +200,9 @@ T min(Vector2<T> const& v1, Vector2<T> const& v2){
     return Vector2<T>(std::min(v1.x, v2.x), std::min(v1.y, v2.y));
 }
 
+template<typename T>
+Vector2<T> permute(Vector2<T> const& v, int x, int y){
+    return Vector2<T>(v[x], v[y]);
+}
+
 #endif

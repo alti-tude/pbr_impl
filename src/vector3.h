@@ -210,4 +210,9 @@ T min(Vector3<T> const& v1, Vector3<T> const& v2){
     return Vector3<T>(std::min(v1.x, v2.x), std::min(v1.y, v2.y), std::min(v1.z, v2.z));
 }
 
+template<typename T>
+Vector3<T> permute(Vector3<T> const& v, int x, int y, int z){
+    return Vector3<T>(v[x], v[y], v[z]);
+}
+
 #endif

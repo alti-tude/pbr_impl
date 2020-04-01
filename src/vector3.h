@@ -167,7 +167,6 @@ public:
 
     void normalise(){
         assert(x!=0 or y!=0 or z!=0);
-        assert(type()!='i');
 
         T len = length();
         x /= len;
@@ -202,6 +201,10 @@ public:
 
     friend bool operator==(Vector3<T> const &v1, Vector3<T> const &v2){
         return v1.x==v2.x && v1.y==v2.y and v1.z==v2.z;
+    }
+
+    friend bool operator!=(Vector3<T> const &v1, Vector3<T> const &v2){
+        return !(v1==v2);
     }
 };
 

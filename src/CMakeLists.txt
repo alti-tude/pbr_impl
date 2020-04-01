@@ -1,1 +1,1 @@
-add_library(pbr SHARED main.h geometry.h vector.cpp)
+add_library(pbr SHARED geometry.cpp)

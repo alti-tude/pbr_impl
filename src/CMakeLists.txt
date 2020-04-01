@@ -1,0 +1,1 @@
+add_library(pbr_vector SHARED main.h core.h vector3.h vector.cpp)

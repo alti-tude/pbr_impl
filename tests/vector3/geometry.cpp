@@ -16,7 +16,7 @@ int main(){
     assert(std::sqrt(a.dot(a)) == a.length());
 
     b.normalise();
-    assert(b.dot(b)==1);
+    assert(b.dot(b)-1.0<(Float)1e-8);
     
     b.x = b.y = b.z = 0;
     assert(b.dot(b)==0);

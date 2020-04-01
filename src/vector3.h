@@ -1,5 +1,5 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#ifndef VECTOR3_H
+#define VECTOR3_H
 
 #include"core.h"
 
@@ -152,7 +152,7 @@ public:
     }
 
     T absDot(Vector3<T> const& v) const{
-        return std::abs(x*v.x+y*v.y+z*v.z);
+        return std::abs(this->dot(v));
     }
 
     Vector3<T> cross(Vector3<T> const&v){

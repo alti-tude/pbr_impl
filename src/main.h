@@ -4,5 +4,6 @@
 #include<iostream>
 #include <math.h>  
 #include "vector3.h"
+#include "vector2.h"
 
 #endif

@@ -1,0 +1,25 @@
+add_executable(vector3_add_sub_test vector_add_sub_test.cpp)
+target_include_directories(vector3_add_sub_test PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(vector3_add_sub_test pbr_vector)
+
+add_executable(vector3_add_sub_int_test vector_add_sub_int_test.cpp)
+target_include_directories(vector3_add_sub_int_test PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(vector3_add_sub_int_test pbr_vector)
+
+add_executable(vector3_mul_div_test vector_mul_div_test.cpp)
+target_include_directories(vector3_mul_div_test PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(vector3_mul_div_test pbr_vector)
+
+add_executable(vector3_mul_div_int_test vector_mul_div_int_test.cpp)
+target_include_directories(vector3_mul_div_int_test PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(vector3_mul_div_int_test pbr_vector)
+
+add_executable(vector3_geometry geometry.cpp)
+target_include_directories(vector3_geometry PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(vector3_geometry pbr_vector)
+
+add_test(NAME vector3_add_sub_test COMMAND vector3_add_sub_test)
+add_test(NAME vector3_add_sub_int_test COMMAND vector3_add_sub_int_test)
+add_test(NAME vector3_mul_div_test COMMAND vector3_mul_div_test)
+add_test(NAME vector3_mul_div_int_test COMMAND vector3_mul_div_int_test)
+add_test(NAME vector3_geometry COMMAND vector3_geometry)
